@@ -1,0 +1,15 @@
+/**index.wxss**/
+@import '../../wxParser/index.wxss';
+
+.content-container{
+    font-size: 28rpx;
+}
+.wxParser-area{
+    padding: 20rpx;
+}
+.wxParser-area{
+    padding: 30rpx;
+}
+.rich-text-area{
+    padding: 30rpx;
+}

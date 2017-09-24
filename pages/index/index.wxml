@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="content-container">
+    <div class="recommend-area">
+
+    </div>
+    <view class="scroll-area">
+        <scroll-view class="nav-scroll" scroll-with-animation scroll-y scroll-into-view="{{navScroll.scroll_into_view}}">
+            <block wx:for="{{totalItemListData}}" wx:key="id">
+                <view class="group-item" bindtap="eventGroupItemTap" data-group_id="{{item.id}}">
+                    <view class="group-item-title" >
+                        <text>{{item.title}}</text>
+                        <text wx:if="{{item.count}}" class="count">{{item.count}}</text>
+                    </view>
+                </view>
+            </block>
+        </scroll-view>
+        <scroll-view class="content-scroll" scroll-with-animation scroll-y scroll-into-view="{{contentScroll.scroll_into_view}}" bindscroll="eventContentScroll">
+            <view class="item-list-content">
+                <block wx:for="{{totalItemListData}}" wx:key="id" wx:for-index="gIndex">
+                    <view class="group-item" data-id="{{item.id}}" id="group-id-{{item.id}}">
+                        <view class="group-item-title">
+                            <text>{{item.title}}</text>
+                        </view>
+                        <view class="item-list">
+                            <block wx:for="{{item.item_list}}" wx:for-item="vo" wx:for-index="iIndex" wx:key="id">
+                                <view class="item">
+                                    <image src="{{vo.img[0]}}" mode="aspectFill"></image>
+                                    <view class="content">
+                                        <text class="title">{{vo.title}}</text>
+                                        <text class="price"><text class="numb">￥{{vo.price}}</text> /{{vo.unit}}</text>
+                                        <view class="count-box">
+                                            <text class="sub" bindtap="eventItemSub" data-group_index="{{gIndex}}" data-item_index="{{iIndex}}">-</text>
+                                            <text wx:if="{{vo.count}}" class="numb">{{vo.count}}</text>
+                                            <text wx:else class="numb">0</text>
+                                            <text class="add" bindtap="eventItemAdd" data-group_index="{{gIndex}}" data-item_index="{{iIndex}}">+</text>
+                                        </view>
+                                    </view>
+                                </view>
+                            </block>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="bottom-handle-area">
+
+    </view>
+</view>

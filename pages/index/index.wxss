@@ -1,0 +1,137 @@
+/**index.wxss**/
+page{
+
+}
+.scroll-area{
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 100rpx 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nav-scroll{
+    width: 25%;
+    height: 100%;
+    font-size: 28rpx;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #f6f8f9;
+}
+.nav-scroll .group-item{
+    padding: 30rpx 20rpx ;
+    border-bottom: 1rpx solid #ddd;
+    position: relative;
+}
+.nav-scroll .group-item .count{
+    position: absolute;
+    right: 0;
+    top:0;
+    font-size: 24rpx;
+    background: #ff3b3b;
+    color: #fff;
+    width: 40rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    text-align: center;
+    border-radius: 40rpx;
+}
+.content-scroll{
+    width: 75%;
+    height: 100%;
+    font-size: 28rpx;
+}
+
+.item-list-content .group-item{
+    border-bottom: 1rpx solid #bbb;
+}
+.item-list-content .group-item .group-item-title{
+    font-size: 24rpx;
+    color: #cccccc;
+    padding: 10rpx;
+}
+
+.item-list-content .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20rpx 10rpx;
+}
+.item-list-content .item image{
+    width: 200rpx;
+    height: 160rpx;
+}
+.item-list-content .item .title{
+    font-size: 28rpx;
+    word-break: break-all;
+}
+
+.item-list-content .item .content{
+    width: 320rpx;
+    padding: 0 0 0 20rpx;
+}
+
+.item .content .title{
+    display: block;
+    font-size: 30rpx;
+    word-break: break-all;
+    margin-bottom: 10rpx;
+}
+.item .content .price{
+    display: block;
+    font-size: 24rpx;
+    word-break: break-all;
+    margin-bottom: 20rpx;
+    color: #888;
+}
+.item .content .price .numb{
+    color: #ff3b3b;
+    font-size: 28rpx;
+}
+.item .content .count-box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.item .content .count-box .sub{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    color: #888888;
+    border: 1rpx solid #888;
+    text-align: center;
+    font-size:50rpx;
+    border-radius: 60rpx;
+}
+.item .content .count-box .add{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    color: #fff;
+    border: 1rpx solid #ff3b3b;
+    text-align: center;
+    background: #ff3b3b;
+    font-size: 40rpx;
+    border-radius: 60rpx;
+}
+.item .content .count-box .numb{
+    font-size: 30rpx;
+    width: 80rpx;
+    text-align: center;
+    line-height: 30rpx;
+}

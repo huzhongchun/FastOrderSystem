@@ -1,0 +1,61 @@
+/**index.wxss**/
+
+.p-list{
+    padding: 20rpx 0;
+}
+.p-item{
+    position: relative;
+    width: 670rpx;
+    margin: 0 auto 40rpx;
+    background: #fff;
+    padding-bottom: 40rpx;
+    box-shadow: rgba(0,0,0,.1) 0 0 12rpx 0;
+}
+.p-item .title{
+    color: #353535;
+    font-size: 34rpx;
+    padding: 40rpx;
+}
+.p-img{
+    display: block;
+    padding: 0 40rpx;
+    margin-bottom: 20rpx;
+}
+.p-item image{
+    display: block;
+    width: 100%
+}
+.p-item .desc{
+    color: #353535;
+    font-size: 28rpx;
+    text-align: justify;
+    padding: 0 30rpx;
+    line-height: 1.5;
+    margin-bottom: 25rpx;
+}
+.p-item .price{
+    font-size: 28rpx;
+    padding: 0 30rpx;
+}
+.p-item .price-old{
+    color: #B2B1C0;
+    font-size: 24rpx;
+    text-decoration: line-through;
+    margin-right: 20rpx;
+    vertical-align: baseline;
+}
+.p-item .handle-btn{
+    display: block;
+    width: 150rpx;
+    height: 60rpx;
+    border: 1rpx solid #00CA9D;
+    color: #00CA9D;
+    line-height: 60rpx;
+    text-align: center;
+    letter-spacing: 1rpx;
+    font-size: 30rpx;
+    border-radius: 10rpx;
+    position: absolute;
+    bottom: 20rpx;
+    right: 30rpx;
+}

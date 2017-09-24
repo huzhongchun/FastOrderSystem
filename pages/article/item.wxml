@@ -1,0 +1,18 @@
+<!--item.wxml-->
+<import src="../../wxParser/index.wxml"/>
+
+
+<view class="content-container">
+    <!-- 直接使用富文本组件 -->
+    <view class="rich-text-area">
+        <rich-text nodes="{{nodes}}" bindtap="tap"></rich-text>
+    </view>
+
+    <!-- wxParser -->
+    <view class="wxParser-area">
+        <view class="wxParser">
+            <template is="wxParser" data="{{wxParserData:richText.nodes}}"/>
+        </view>
+    </view>
+
+</view>

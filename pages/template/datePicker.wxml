@@ -1,0 +1,20 @@
+<!--时间日期选择器-->
+<template name="datePicker">
+    <view class="date-picker-container" style="display:{{display}}">
+        <view class="date-picker-box">
+            <view class="section-date">
+                <view class="section-title">选择日期：</view>
+                <picker mode="date" value="{{dateInfo.date}}" start="2015-09-01" end="2017-09-01" bindchange="eventDateChange">
+                    {{dateInfo.date}}
+                </picker>
+            </view>
+            <view class="section-time">
+                <view class="section-title">选择时间：</view>
+                <picker mode="time" value="{{dateInfo.time}}" start="09:01" end="21:01" bindchange="eventTimeChange">
+                    {{dateInfo.time}}
+                </picker>
+            </view>
+            <view class="check-date-btn" bindtap="eventHideDatePicker">确定</view>
+        </view>
+    </view>
+</template>

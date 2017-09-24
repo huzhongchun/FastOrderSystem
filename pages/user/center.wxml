@@ -1,0 +1,7 @@
+<!--用户中心-->
+<view class="content-container">
+    <view class="info-box">
+        <view class="avatar" style="background-image: url({{userInfo.avatarUrl}})"></view>
+        <view class="nick">{{userInfo.nickName}}</view>
+    </view>
+</view>

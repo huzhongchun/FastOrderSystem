@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="content-container">
+    <view class="p-list">
+        <block wx:for="{{productList}}" wx:key="id">
+            <navigator class="p-item" data-id="{{item.id}}" open-type="navigate" url="">
+                <view class="title">{{item.title}}</view>
+                <view class="p-img">
+                    <image mode="widthFix" src="{{item.cover_image}}"></image>
+                </view>
+                <view class="desc">
+                    {{item.desc}}
+                </view>
+                <view class="price">
+                    <text class="price-old">原价：{{item.price_old}}￥</text>
+                    <text class="price-now">现价：{{item.price_now}}￥</text>
+                </view>
+                <view class="handle-btn" catchtap="eventPayment">购买</view>
+            </navigator>
+        </block>
+    </view>
+</view>
